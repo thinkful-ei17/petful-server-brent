@@ -25,6 +25,7 @@ const peek = queue => {
   if (queue.first === null) {
     return null;
   }
+  console.log(queue.first.data);
   return queue.first.data;
 };
 
@@ -40,24 +41,24 @@ function runServer(port = PORT) {
     });
 }
 
-app.get('/api/cat', (req, res) => {
-  res.json(peek(catQueue));
-});
+app.get('/api/cat', (req, res) => 
+  res.json(peek(catQueue))
+);
 
 app.delete('/api/cat', (req, res) => {
   catQueue.dequeue();
-  res.status(204).json({
+  return res.status(204).json({
     message: 'Adoption successful!',
   });
 });
 
-app.get('/api/dog', (req, res) => {
-  res.json(peek(dogQueue));
-});
+app.get('/api/dog', (req, res) => 
+  res.json(peek(dogQueue))
+);
 
 app.delete('/api/dog', (req, res) => {
   dogQueue.dequeue();
-  res.status(204).json({
+  return res.status(204).json({
     message: 'Adoption successful!',
   });
 });
