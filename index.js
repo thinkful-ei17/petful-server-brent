@@ -8,12 +8,30 @@ const dogs = [
   {
     imageURL: 'http://www.dogster.com/wp-content/uploads/2015/05/Cute%20dog%20listening%20to%20music%201_1.jpg',
     imageDescription: 'A smiling golden-brown golden retreiver listening to music.',
+    name: 'Doggy',
+    sex: 'Male',
+    age: 3,
+    breed: 'Golden Retriever',
+    story: 'Owner Passed away'
+  },
+  {
+    imageURL: 'http://www.dogster.com/wp-content/uploads/2015/05/Cute%20dog%20listening%20to%20music%201_1.jpg',
+    imageDescription: 'A smiling golden-brown golden retreiver listening to music.',
+    name: 'Lord Kramdar',
+    sex: 'Male',
+    age: 3,
+    breed: 'Golden Retriever',
+    story: 'Owner Passed away'
+  },
+  {
+    imageURL: 'http://www.dogster.com/wp-content/uploads/2015/05/Cute%20dog%20listening%20to%20music%201_1.jpg',
+    imageDescription: 'A smiling golden-brown golden retreiver listening to music.',
     name: 'Zeus',
     sex: 'Male',
     age: 3,
     breed: 'Golden Retriever',
     story: 'Owner Passed away'
-  },  
+  },
 ];
 
 const cats = [
@@ -21,6 +39,24 @@ const cats = [
     imageURL: 'https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg',
     imageDescription: 'Orange bengal cat with black stripes lounging on concrete.',
     name: 'Fluffy',
+    sex: 'Female',
+    age: 2,
+    breed: 'Bengal',
+    story: 'Thrown on the street'
+  },
+  {
+    imageURL: 'https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg',
+    imageDescription: 'Orange bengal cat with black stripes lounging on concrete.',
+    name: 'Scruffy',
+    sex: 'Female',
+    age: 2,
+    breed: 'Bengal',
+    story: 'Thrown on the street'
+  },
+  {
+    imageURL: 'https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg',
+    imageDescription: 'Orange bengal cat with black stripes lounging on concrete.',
+    name: 'Jim',
     sex: 'Female',
     age: 2,
     breed: 'Bengal',
@@ -58,8 +94,38 @@ app.get('/api/cat', (req, res) => {
   res.json(cats[0]);
 });
 
+app.delete('/api/cat', (req, res) => {
+  cats.shift()
+    .then(() => {
+      res.status(204).json({
+        message: 'Adoption successful!',
+      });
+    })
+    .catch((err) => {
+      console.error(err);
+      res.status(500).json({
+        error: 'Uh oh spaghetti-o\'s',
+      });
+    });
+});
+
 app.get('/api/dog', (req, res) => {
   res.json(dogs[0]);
+});
+
+app.delete('/api/dog', (req, res) => {
+  dogs.shift()
+    .then(() => {
+      res.status(204).json({
+        message: 'Adoption successful!',
+      });
+    })
+    .catch((err) => {
+      console.error(err);
+      res.status(500).json({
+        error: 'Uh oh spaghetti-o\'s',
+      });
+    });
 });
 
 if (require.main === module) {
