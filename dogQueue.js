@@ -34,7 +34,7 @@ dogQueue.enqueue(
     sex: 'Female',
     age: 420,
     breed: 'Cute',
-    story: 'Way significantly cooler than his owner. The split was amicable',
+    story: 'Significantly cooler than his owner. The split was amicable',
   }
 );
 
