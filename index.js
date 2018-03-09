@@ -25,8 +25,7 @@ function peek(queue) {
   if (queue.first === null) {
     return null;
   }
-  console.log(queue.first.data);
-  return queue.first.data;
+  return queue.first.value;
 }
 
 
@@ -53,7 +52,7 @@ app.delete('/api/cat', (req, res) => {
 });
 
 app.get('/api/dog', (req, res) => {
-  console.log(dogQueue);
+  console.log('dogqueue',dogQueue);
   res.json(peek(dogQueue));
 });
 
