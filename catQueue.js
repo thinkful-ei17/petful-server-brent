@@ -4,37 +4,37 @@ const catQueue = new queue();
 
 catQueue.enqueue(
   {
-    imageURL: 'https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg',
-    imageDescription: 'Orange bengal cat with black stripes lounging on concrete.',
-    name: 'Fluffy',
+    imageURL: 'https://i.imgur.com/qltujcah.jpg',
+    imageDescription: 'Cat eating banana',
+    name: 'Banana man',
     sex: 'Female',
-    age: 2,
-    breed: 'Bengal',
-    story: 'Thrown on the street.'
+    age: 5,
+    breed: 'Orange thing',
+    story: 'Ate owners banana'
   }
 );
 
 catQueue.enqueue(
   {
-    imageURL: 'https://i.imgur.com/KSFeIO1.jpg',
-    imageDescription: 'Gray cat standing on her hind legs on the bed',
-    name: 'Einstein',
+    imageURL: 'https://www.vetbabble.com/wp-content/uploads/2016/11/hiding-cat.jpg',
+    imageDescription: 'A cat, I think?',
+    name: 'Secret hider cat',
     sex: 'Female',
-    age: 3,
-    breed: 'American Shorthair',
-    story: 'Got too smart for her owner.'
+    age: 1,
+    breed: 'Soft cat',
+    story: 'Hid under something so the owners thought she ran away.'
   }
 );
 
 catQueue.enqueue(
   {
-    imageURL: 'https://i.imgur.com/S16mvmE.jpg',
-    imageDescription: 'Gray maine coon cat with fur shaped to make it look like a little lion',
-    name: 'Simba',
+    imageURL: 'https://i.imgflip.com/kzg66.jpg',
+    imageDescription: 'Cat staring off into the distance',
+    name: 'Theodore',
     sex: 'Male',
-    age: 4,
-    breed: 'Maine Coon',
-    story: 'Ran away after getting such a ridiculous hair cut.'
+    age: 58,
+    breed: 'Fuzzy guy',
+    story: 'Became too heavy for the owner to lift.'
   }
 );
 

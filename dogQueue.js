@@ -16,25 +16,49 @@ dogQueue.enqueue(
 
 dogQueue.enqueue(
   {
-    imageURL: 'https://i.imgur.com/Fr9luGW.jpg',
-    imageDescription: 'Beagle puppy with his head down has he fails to walk up stairs',
-    name: 'Charlie Brown',
+    imageURL: 'http://cdn2-www.dogtime.com/assets/uploads/gallery/maltese-dog-breed-picture/thumbs/thumbs_1-runningpuppy.jpg',
+    imageDescription: 'Maltese running super fast',
+    name: 'Beetlejuice',
     sex: 'Male',
     age: 1,
-    breed: 'Beagle',
-    story: 'He does not know how to walk up stairs. His owner lived on the 8th floor.'
+    breed: 'Maltese',
+    story: 'Someone said he name 3 times',
   }
 );
 
 dogQueue.enqueue(
   {
-    imageURL: 'https://i.imgur.com/W7V6Q.jpg',
-    imageDescription: 'A goldendoodle puppy sitting on a small bag of kibble in the front seat of a car.',
-    name: 'Louise',
+    imageURL: 'http://i.dailymail.co.uk/i/pix/2011/09/22/article-2040461-0E08958300000578-449_306x423.jpg',
+    imageDescription: 'A dog being much cooler than you.',
+    name: 'Sk8rB0i',
     sex: 'Female',
-    age: 1,
-    breed: 'Goldendoodle',
-    story: 'Got lost on a road trip. Looking for a forever home.'
+    age: 420,
+    breed: 'Cute',
+    story: 'Way significantly cooler than his owner. The split was amicable',
+  }
+);
+
+dogQueue.enqueue(
+  {
+    imageURL: 'https://i.ytimg.com/vi/G5NAmj64VVs/maxresdefault.jpg',
+    imageDescription: 'A dog about to bork',
+    name: 'BORKBORKBORK',
+    sex: 'Unknown',
+    age: 'BORK',
+    breed: 'BOOOOOOOOORK',
+    story: 'Wouldn\'t stop borking',
+  }
+);
+
+dogQueue.enqueue(
+  {
+    imageURL: 'http://i0.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg',
+    imageDescription: 'Much doge.',
+    name: 'Doge',
+    sex: 'Male',
+    age: 8,
+    breed: 'Fluffy doge',
+    story: 'Such adoption, very doge',
   }
 );
 
