@@ -21,13 +21,13 @@ app.use(
   })
 );
 
-const peek = queue => {
+function peek(queue) {
   if (queue.first === null) {
     return null;
   }
   console.log(queue.first.data);
   return queue.first.data;
-};
+}
 
 
 function runServer(port = PORT) {
