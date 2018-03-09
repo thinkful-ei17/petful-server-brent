@@ -95,18 +95,10 @@ app.get('/api/cat', (req, res) => {
 });
 
 app.delete('/api/cat', (req, res) => {
-  cats.shift()
-    .then(() => {
-      res.status(204).json({
-        message: 'Adoption successful!',
-      });
-    })
-    .catch((err) => {
-      console.error(err);
-      res.status(500).json({
-        error: 'Uh oh spaghetti-o\'s',
-      });
-    });
+  cats.shift();
+  res.status(204).json({
+    message: 'Adoption successful!',
+  });
 });
 
 app.get('/api/dog', (req, res) => {
@@ -114,18 +106,10 @@ app.get('/api/dog', (req, res) => {
 });
 
 app.delete('/api/dog', (req, res) => {
-  dogs.shift()
-    .then(() => {
-      res.status(204).json({
-        message: 'Adoption successful!',
-      });
-    })
-    .catch((err) => {
-      console.error(err);
-      res.status(500).json({
-        error: 'Uh oh spaghetti-o\'s',
-      });
-    });
+  dogs.shift();
+  res.status(204).json({
+    message: 'Adoption successful!',
+  });
 });
 
 if (require.main === module) {
