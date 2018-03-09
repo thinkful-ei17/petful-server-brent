@@ -41,24 +41,24 @@ function runServer(port = PORT) {
     });
 }
 
-app.get('/api/cat', (req, res) => 
-  res.json(peek(catQueue))
-);
+app.get('/api/cat', (req, res) => {
+  res.json(peek(catQueue));
+});
 
 app.delete('/api/cat', (req, res) => {
   catQueue.dequeue();
-  return res.status(204).json({
+  res.status(204).json({
     message: 'Adoption successful!',
   });
 });
 
-app.get('/api/dog', (req, res) => 
-  res.json(peek(dogQueue))
-);
+app.get('/api/dog', (req, res) => {
+  res.json(peek(dogQueue));
+});
 
 app.delete('/api/dog', (req, res) => {
   dogQueue.dequeue();
-  return res.status(204).json({
+  res.status(204).json({
     message: 'Adoption successful!',
   });
 });
