@@ -1,6 +1,6 @@
-const Queue = require('./Queue');
+const queue = require('./Queue');
 
-const catQueue = new Queue();
+const catQueue = new queue();
 
 catQueue.enqueue(
   {

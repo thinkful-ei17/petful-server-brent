@@ -1,6 +1,6 @@
-const Queue = require('./Queue');
+const queue = require('./Queue');
 
-const dogQueue = new Queue();
+const dogQueue = new queue();
 
 dogQueue.enqueue(
   {
