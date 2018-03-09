@@ -22,7 +22,7 @@ dogQueue.enqueue(
     sex: 'Male',
     age: 1,
     breed: 'Maltese',
-    story: 'Someone said he name 3 times',
+    story: 'Someone said his name 3 times',
   }
 );
 
