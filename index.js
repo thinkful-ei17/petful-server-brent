@@ -53,6 +53,7 @@ app.delete('/api/cat', (req, res) => {
 });
 
 app.get('/api/dog', (req, res) => {
+  console.log(dogQueue);
   res.json(peek(dogQueue));
 });
 
